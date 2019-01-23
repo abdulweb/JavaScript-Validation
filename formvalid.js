@@ -1,22 +1,26 @@
 function formValidation(){
 
 	// Make quick references to our fields
-	var firstname =  document.getElementById('fname');
-	var addr =  document.getElementById('addr');
-	var zip =  document.getElementById('zip');
-	var state =  document.getElementById('state');
-	var username =  document.getElementById('username');
+	var fname =  document.getElementById('fname');
 	var email =  document.getElementById('email');
+	var password =  document.getElementById('password');
+	var con_password =  document.getElementById('con_password');
+	var username =  document.getElementById('username');
 
-	//  to check empty form fields.
+	//  to check empty form fields and set border red.
 
-    if(firstname.value.length == 0){
+    if(fname.value.length == 0 || email.value.length == 0 || con_password.value.length == 0 ||  password.value.length == 0 || con_password.value.length == 0){
 		// document.getElementById('head').innerText = "* All fields are mandatory *"; //this segment displays the validation rule for all fields
 		// firstname.focus();
 		
 		document.getElementById('fname').style.borderColor = "red";
+		document.getElementById('email').style.borderColor = "red";
+		document.getElementById('username').style.borderColor = "red";
+		document.getElementById('password').style.borderColor = "red";
+		document.getElementById('con_password').style.borderColor = "red";
 		return false;
-	} 
+	}
+	
 	
 	// Check each input in the order that it appears in the form!
 	 if(inputAlphabet(firstname, "* For your name please use alphabets only *")){
