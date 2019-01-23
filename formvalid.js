@@ -1,7 +1,7 @@
 function formValidation(){
 
 	// Make quick references to our fields
-	var firstname =  document.getElementById('firstname');
+	var firstname =  document.getElementById('fname');
 	var addr =  document.getElementById('addr');
 	var zip =  document.getElementById('zip');
 	var state =  document.getElementById('state');
@@ -13,8 +13,9 @@ function formValidation(){
     if(firstname.value.length == 0){
 		// document.getElementById('head').innerText = "* All fields are mandatory *"; //this segment displays the validation rule for all fields
 		// firstname.focus();
-		// return false;
-		document.getElementById('firstname').style.borderColor = "red";
+		
+		document.getElementById('fname').style.borderColor = "red";
+		return false;
 	} 
 	
 	// Check each input in the order that it appears in the form!

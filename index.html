@@ -59,7 +59,7 @@
 					User form
 				</div>
 				<div class="panel-body">
-					<!-- <form class="form-horizontal" method="post">
+					<form class="form-horizontal" onsubmit='return formValidation()' method="post">
 				  
 				  <div class="form-group">
 				    <label class="control-label col-sm-2" for="email">Fullname:</label>
@@ -96,41 +96,9 @@
 				      <button type="submit" id="btn" class="btn btn-default" name="loginBtn" onclick="return valid();"  style="float: right" >Submit</button>
 				    </div>
 				  </div>
-				</form> -->
-
-				<form  onsubmit='return formValidation()'><br><p id="head"></p><br>
-					<label>Full Name:</label>
-					<input type='text' id='firstname'/><br />
-					<p id="p1"></p>	<!--This segment displays the validation rule for name--> 				
-					
-					<label>Username(6-8 characters):</label>
-					<input type='text' id='username' /><br />
-					<p id="p2"></p> <!--This segment displays the validation rule for user name--> 
-					
-					<label>Email:</label>
-					<input type='text' id='email' /><br />
-					<p id="p3"></p> <!--This segment displays the validation rule for email--> 
-					
-					<label>State:</label>
-					 <select id='state'>
-						<option>Please Choose</option>
-						<option>America</option>
-						<option>Australia</option>
-						<option>Sweden</option>
-						<option>Africa</option>
-					</select><br />
-					<p id="p4"></p> <!--This segment displays the validation rule for selection--> 
-
-					<label>Address:</label>
-					<input type='text' id='addr' /><br />
-					<p id="p5"></p> <!--This segment displays the validation rule for address--> 
-
-					<label>Zip Code: </label>
-					<input type='text' id='zip' /><br />
-					<p id="p6"></p> <!--This segment displays the validation rule for zip--> 
-
-					<input type='submit' id="submit" value='Check Form'/><br />
 				</form>
+
+				
 				</div>
 			</div>
 
